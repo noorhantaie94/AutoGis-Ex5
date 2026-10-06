@@ -1,15 +1,21 @@
-# AutoGIS Exercise 5: Static Thematic Map
+# AutoGIS Exercise 5: Static and Interactive Maps
 
 ## Overview
-This repository contains the solution for **Exercise 5 (Problem 1)** of the *Automating GIS Processes* course at the University of Helsinki.
+This repository contains the complete solution for **Exercise 5** of the *Automating GIS Processes* course (University of Helsinki). The exercise focuses on creating, customizing, and deploying both static thematic maps and interactive web maps using Python spatial libraries.
 
-The project visualizes the spatial relationship between **population distribution** and **major commercial centers** in the Helsinki Metropolitan Area.
+---
 
-## Map Features & Methodology
-- **Population Grid Data (2020):** Retreived from HSY WFS service, visualized as a choropleth map using the `NaturalBreaks` classification method (`YlOrRd` color scheme).
-- **Shopping Centers Layer:** Point features representing key commercial hubs (Kamppi, Itis, Jumbo, Sello, Redi, Tripla) overlaid to show regional accessibility.
-- **Cartographic Layout:** Includes a customized legend, point labels, title, and proper data source attributions.
-
-## Output File
-The final high-resolution map is saved under the `docs/` folder:
-- `helsinki_population_centers_map.png`
+##  Repository Structure
+```text
+AutoGis-Ex5/
+│
+├── Exercise-5-problem-1.ipynb    # Notebook for Problem 1 (Static Map)
+├── Exercise-5-problem-2.ipynb    # Notebook for Problem 2 (Interactive Map)
+│
+├── docs/                         # Folder containing rendered outputs
+│   ├── helsinki_population_centers_map.png  # Static map output (PNG)
+│   └── helsinki_interactive_map.html        # Interactive map output (HTML)
+│
+└── data/                         # Input datasets (GeoPackage files)
+    ├── helsinki_pop_grid.gpkg
+    └── shopping_centers.gpkg
